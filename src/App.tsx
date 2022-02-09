@@ -97,7 +97,7 @@ function App() {
   const [textInput, setTextInput] = useState('')
   const [hashtagInput, setHashtagInput] = useState('')
   const [buttonsInput, setButtonsInput] = useState('false')
-  let buildedLink = clearLink(`${window.location.origin}/?sentence=${textInput}&hashtag=${hashtagInput}&prefix=${buttonsInput}`);
+  let buildedLink = clearLink(`${window.location.origin + window.location.pathname}/?sentence=${textInput}&hashtag=${hashtagInput}&prefix=${buttonsInput}`);
 
   const onTextInputChange = (e: any) => {
     console.log('value:', e.target.value);
@@ -140,7 +140,7 @@ function App() {
   const defaultSentence = newsObject && newsObject.english ? englishSentence : itSentence;
   const sentence = queryStringSentece || defaultSentence;
   let newsSentence = querystringPrefix ? `${sentence}${titleNews}` : `${titleNews}${sentence}`;
-  const shareUrl = clearHrefAnchor(window.location.href);
+  const shareUrl = clearHrefAnchor(window.location.href + window.location.pathname);
   const hashtags = ["simurgnews"];
   queryStringHashtag && hashtags.splice(0, 0, queryStringHashtag)
   const createYourNews = " - crea la tua news:"
