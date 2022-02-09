@@ -24,15 +24,14 @@ const theme = createTheme({
 });
 
 const ansaRssList = [
-  'https://www.ansa.it/sito/notizie/topnews/topnews_rss.xml',
-  'https://www.ansa.it/sito/notizie/sport/sport_rss.xml',
-  'https://www.ansa.it/sito/ansait_rss.xml',
-  'https://www.ansa.it/sito/notizie/cultura/cultura_rss.xml',
-  'https://www.ansa.it/sito/notizie/economia/economia_rss.xml',
-  'https://www.ansa.it/english/english_rss.xml',
-  'https://www.ansa.it/sito/notizie/cultura/cinema/cinema_rss.xml',
-  'https://www.ansa.it/canale_motori/notizie/motori_rss.xml',
-]
+  'https://www.rainews.it/rss/politica',
+  'https://www.rainews.it/rss/economiaefinanza',
+  'https://www.rainews.it/rss/scienzaetecnologia',
+  'https://www.rainews.it/rss/sport',
+  'https://www.rainews.it/rss/cronaca',
+  'https://www.rainews.it/rss/economia',
+  'https://www.rainews.it/rss/esteri',
+  ]
 
 const itSentence = ', come italia veeva chiedeva da tempo!';
 const englishSentence = ' as italia veeva has asked for a long time!';
