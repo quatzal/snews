@@ -140,7 +140,7 @@ function App() {
   const defaultSentence = newsObject && newsObject.english ? englishSentence : itSentence;
   const sentence = queryStringSentece || defaultSentence;
   let newsSentence = querystringPrefix ? `${sentence}${titleNews}` : `${titleNews}${sentence}`;
-  const shareUrl = clearHrefAnchor(window.location.href + window.location.pathname);
+  const shareUrl = clearHrefAnchor(window.location.href);
   const hashtags = ["simurgnews"];
   queryStringHashtag && hashtags.splice(0, 0, queryStringHashtag)
   const createYourNews = " - crea la tua news:"
