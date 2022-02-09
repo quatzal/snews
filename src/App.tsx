@@ -31,7 +31,7 @@ const ansaRssList = [
   'https://www.rainews.it/rss/cronaca',
   'https://www.rainews.it/rss/economia',
   'https://www.rainews.it/rss/esteri',
-  ]
+]
 
 const itSentence = ', come italia veeva chiedeva da tempo!';
 const englishSentence = ' as italia veeva has asked for a long time!';
@@ -159,7 +159,9 @@ function App() {
           <div className="visits">
             <p>Questa pagina è stata visitata</p>
             <h1 id="count">-</h1>
-            <p>volte</p>
+            <p>volte</p><br />
+            <p>Il sito genera le news grazie all'utilizzo dei feed rss messi a disposizione da <a href="https://www.rainews.it/rss">rainews.it</a>,<br/>
+            utilizza tali feed ai soli fini satirici e di intrattenimento e non ha alcuno scopo di lucro. </p>
           </div>
           <a href="#create-news" className='float-icon'>
             <svg xmlns="http://www.w3.org/2000/svg" height="80" viewBox="0 0 54 54" width="80">
