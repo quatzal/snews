@@ -23,7 +23,7 @@ const theme = createTheme({
   },
 });
 
-const ansaRssList = [
+const rssList = [
   'https://www.rainews.it/rss/politica',
   'https://www.rainews.it/rss/economiaefinanza',
   'https://www.rainews.it/rss/scienzaetecnologia',
@@ -49,7 +49,7 @@ const readQueryStringParams = () => {
 }
 
 
-const getRss = async (rssUrl = getRandomElementArray(ansaRssList)) => {
+const getRss = async (rssUrl = getRandomElementArray(rssList)) => {
   const urlRegex = /(http|ftp|https):\/\/[\w-]+(\.[\w-]+)+([\w.,@?^=%&amp;:/~+#-]*[\w@?^=%&amp;/~+#-])?/;
   if (!urlRegex.test(rssUrl)) {
     return;
