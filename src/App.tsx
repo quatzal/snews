@@ -156,8 +156,9 @@ function App() {
             <p>Questa pagina è stata visitata</p>
             <h1 id="count">-</h1>
             <p>volte</p><br />
-            <p>Il sito genera le news grazie all'utilizzo dei feed rss messi a disposizione da <a href="https://www.rainews.it/rss">rainews.it</a>,<br/>
-            utilizza tali feed ai soli fini satirici e di intrattenimento e non ha alcuno scopo di lucro. </p>
+            <p className='discaimer'>Simurg News | L'informazione divertente genera le notizie grazie all'utilizzo dei feed rss messi a disposizione da <a href="https://www.rainews.it/rss">rainews.it</a>.
+            Utilizza tali dati ai soli fini satirici e di intrattenimento e non ha alcuno scopo di lucro.
+            L'utente si assume la piena responsabilità in caso di utilizzo offensivo e/o diverso da quello specificato.</p>
           </div>
           <a href="#create-news" className='float-icon'>
             <svg xmlns="http://www.w3.org/2000/svg" height="80" viewBox="0 0 54 54" width="80">
