@@ -63,7 +63,7 @@ const getRss = async (rssUrl = getRandomElementArray(rssList)) => {
     textContent: el.querySelector("title").textContent,
     english: rssUrl.includes("english"),
     hashtags: [],
-  })) || [];
+  })).filter(elm => !elm.textContent.includes('�')) || []; //WORKAROUND to explude special char
 };
 
 function updateVisitCount() {
@@ -99,17 +99,14 @@ function App() {
   let buildedLink = clearLink(`${window.location.origin + window.location.pathname}/?sentence=${textInput}&hashtag=${hashtagInput}&prefix=${buttonsInput}`);
 
   const onTextInputChange = (e: any) => {
-    console.log('value:', e.target.value);
     setTextInput(e.target.value)
   }
 
   const onHashtagInputChange = (e: any) => {
-    console.log('value:', e.target.value);
     setHashtagInput(e.target.value)
   }
 
   const buttonGroupHandleChange = (event: React.ChangeEvent<HTMLInputElement>) => {
-    console.log(event.target.value);
     setButtonsInput(event.target.value)
   };
 
@@ -138,12 +135,11 @@ function App() {
   const titleNews = newsObject ? newsObject.textContent : '';
   const defaultSentence = newsObject && newsObject.english ? englishSentence : itSentence;
   const sentence = queryStringSentece || defaultSentence;
-  let newsSentence = querystringPrefix ? `${sentence}${titleNews}` : `${titleNews}${sentence}`;
+  let newsSentence = querystringPrefix ? `${sentence} ${titleNews}` : `${titleNews}${sentence}`;
   const shareUrl = clearHrefAnchor(window.location.href);
   const hashtags = ["simurgnews"];
   queryStringHashtag && hashtags.splice(0, 0, queryStringHashtag)
   const createYourNews = " - crea la tua news:"
-
 
   return (
     <div className="App">
