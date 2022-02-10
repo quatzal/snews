@@ -1,14 +1,14 @@
 self.__precacheManifest = (self.__precacheManifest || []).concat([
   {
-    "revision": "803a35f280d17ec275accdd1485d3d3b",
+    "revision": "8ebf7401e8d7cfed50eab54edd729dd1",
     "url": "/snews/asset-manifest.json"
   },
   {
-    "revision": "c007c20ce2cec338ac038f1b0ca9a8b0",
+    "revision": "334151d5100ef9252cf43ed72f00604d",
     "url": "/snews/index.html"
   },
   {
-    "revision": "6e950d30a11f5ab4d190",
+    "revision": "15a376cedde954970664",
     "url": "/snews/static/css/main.87b8e2e3.css"
   },
   {
@@ -16,11 +16,11 @@ self.__precacheManifest = (self.__precacheManifest || []).concat([
     "url": "/snews/static/js/787.827c5c6d.chunk.js"
   },
   {
-    "revision": "6e950d30a11f5ab4d190",
-    "url": "/snews/static/js/main.f8db4c7b.js"
+    "revision": "15a376cedde954970664",
+    "url": "/snews/static/js/main.a4da18e3.js"
   },
   {
     "revision": "8543a91b75d2510224bc5f25cfbec005",
-    "url": "/snews/static/js/main.f8db4c7b.js.LICENSE.txt"
+    "url": "/snews/static/js/main.a4da18e3.js.LICENSE.txt"
   }
 ]);
